@@ -1,4 +1,4 @@
-package Java0611;
+package jave0611;
 
 public class Test1 {
     public static void main(String[] args) {
