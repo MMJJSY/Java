@@ -10,6 +10,7 @@ public class TypeChange1 {
         System.out.println(value2); //10
         float value3 = (float) 5.8;
         float value3_1 = 5.8F;
+        //float value3_2 = 5.8; // 오류 발생
         System.out.println(value3); //5.8
         double value4 = (double) 10;
         double value4_1 = 10D;

@@ -3,11 +3,11 @@ package a1_type;
 public class TypeChange2 {
     public static void main(String[] args) {
         // 비명시적인 타입변환 = 자동 타입변환
-        float value1 = 3;
+        float value1 = 3; // int가 float 으로 업캐스팅 됨
         System.out.println(value1); // 3.0
-        long value2 = 5;
+        long value2 = 5; // int가 long 으로 업캐스팅
         System.out.println(value2); //  5
-        double value3 = 7;
+        double value3 = 7; //int가 double로 업캐스팅
         System.out.println(value3); // 7.0
         byte value4 = 127;
         byte value4_1 = (byte) 128; // 에러발생! 바이트 사이즈 초과
