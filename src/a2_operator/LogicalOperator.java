@@ -3,7 +3,7 @@ package a2_operator;
 public class LogicalOperator {
     public static void main(String[] args) {
         // 논리연산자 ( &&, ||, ^, !)
-        // 발음은 순새돌 앰퍼샌드. 파이프, 캐럿, 니게이션
+        // 발음은 순서대로 앰퍼샌드, 파이프, 캐럿, 니게이션
         // ampersand, pipe, caret, negation(not)
 
         // AND 논리연산자
