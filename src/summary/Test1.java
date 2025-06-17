@@ -27,6 +27,17 @@ public class Test1 {
         System.out.println((double)3 /2 );
         System.out.println((double) (3/2));
 
+        int d = 5;
+        int f = d++;
+        System.out.println(d);
+        System.out.println(f);
+        System.out.println(++d);
+        System.out.println(++f);
+        System.out.println(d++ + --f);
+        System.out.println(d + f);
+
+
+
 
 
     }

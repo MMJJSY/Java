@@ -55,5 +55,8 @@ public class BitwiseOperator {
         // ~ 연산자는 컴퓨터의 음수표현에 사용됨
         // N의 음수는 ~N + 1 로 계산 가능하다
         System.out.println(Integer.toBinaryString(-3)); // 1111 1101
+        System.out.println(-1 >>> 30);
+        System.out.println(false ^ (3 >= 4));
+        System.out.println(!(3 <= 3));
     }
 }
