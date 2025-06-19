@@ -37,22 +37,26 @@ public class BreakContinue {
         }
         System.out.println("끝");
 
-//        for( int i = 0; i < 3; i++ ) {
-//
-//            System.out.println("i = " + i);
-//
-//            for( int j = i; j < 2; j++ ) {
-//
-//                System.out.println("j = " + j);
-//                /*
-//                i=0 => (int j = i) = int j = 0 => j=0 >j++ j=1 실행구문으로 가서 j=1 출력 > j=2 거짓이 되므로 i = 1
-//                int j = i (1) j = 1 i=2
-//                i=0 j= 0 j =1 i=1 j=1 i=2
-//                 */
-//
-//            }
-//
-//        }
+        for( int i = 0; i < 3; i++ ) {
+
+            System.out.println("i = " + i);
+
+            for( int j = i; j < 2; j++ ) {
+
+                System.out.println("j = " + j);
+                /*
+                i = 0
+                j = 0
+                j = 1
+                i = 1
+                j = 1
+                i = 2
+
+                 */
+
+            }
+
+        }
 
         // continue
         // 반복문 안에서 현재 반복을 건너뛰고 다음 반복으로 넘어가도록 함
@@ -64,5 +68,14 @@ public class BreakContinue {
             System.out.print(i + " "); // 0 1 2 3 4 6 7 8 9
         }
         System.out.println();
+
+        for(int i = 0; i < 5; i++) {
+            for(int j= 0; j < 5; j++ ) {
+                if(j==3) {
+                    continue;
+                }
+                System.out.println(i +", " +j); // 0,0 0,1 0,2 0,4 1,0 1,1, 1,2,1,4 ... 4,0 4,1 4,2 4,4
+            }
+        }
     }
 }

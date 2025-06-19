@@ -34,10 +34,19 @@ public class Chap4 {
 //            System.out.print(i+" "); // 0 1 2 3 4 5 6 7 8 9
 //        }
 
-        int a = 0;
-        while(a<10) {
-            System.out.println(a);
-            a++;
+//        int a = 0;
+//        while(a<10) {
+//            System.out.println(a);
+//            a++;
+
+        for(int i =0; i < 10; i++) {
+            if (i==5) {
+                break;
+            }
+            System.out.println(i+" "); //0 1 2 3 4
+        }
+
+
         }
     }
-}
+
