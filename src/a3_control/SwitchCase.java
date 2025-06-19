@@ -16,7 +16,7 @@ public class SwitchCase {
                 System.out.println("A");
                 break;
             case 2:
-                System.out.println("B");
+                System.out.println("B"); // B 출력
                 break;
             case 3:
                 System.out.println("C");

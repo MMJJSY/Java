@@ -2,7 +2,7 @@
 두줄 주석
  */
 
-package summary;
+package testquestion;
 
 public class Test1 {
     public static void main(String[] args) {

@@ -49,5 +49,13 @@ public class ForLoop {
         }
         System.out.println("반복끝");
 
+        // for문 밖에서 iterator를 참조해야만 한다면 아래처럼..
+        int i;
+        for (i=0; i<10; i++) {
+            System.out.println(i);
+        }
+        System.out.println("iterator의 최종값은? ");
+        System.out.println(i);
+
     }
 }
