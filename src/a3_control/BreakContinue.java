@@ -4,7 +4,7 @@ public class BreakContinue {
     public static void main(String[] args) {
         //제어키워드
         //break
-        // switch,for,while,do~while {]를 탈출하는 용도로 사용함. (if는 제외)
+        // switch,for,while,do~while {}를 탈출하는 용도로 사용함. (if는 제외)
         // 중요! 가장 가까운 {} 한개만 탈출 가능
 
         //기본형

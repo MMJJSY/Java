@@ -46,7 +46,6 @@ public class Chap4 {
             System.out.println(i+" "); //0 1 2 3 4
         }
 
-
         }
     }
 
