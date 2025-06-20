@@ -9,7 +9,10 @@ public class Example3 {
     }
     public static int square(int num) {
         // 코드를 작성하여 매개변수의 제곱을 반환하시오
-        int result = num*num;
-        return result;
+//        int result = num*num;
+//        return result;
+        return num*num;
+
     }
+
 }
