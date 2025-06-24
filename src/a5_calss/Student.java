@@ -25,7 +25,9 @@ public class Student {
         this.age = age;
     }
 
-    public Student(String name, int age, String address, String gender, double scoreMath, double scoreHistory, double scoreMusic) {
+    public Student(String name, int age, String address, String gender,
+                   double scoreMath, double scoreHistory, double scoreMusic)
+    {
         this.name = name;
         this.age = age;
         this.address = address;
