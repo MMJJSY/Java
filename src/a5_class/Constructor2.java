@@ -1,4 +1,4 @@
-package a5_calss;
+package a5_class;
 
 public class Constructor2 { // 생성자의 오버로딩
     public static void main(String[] args) {

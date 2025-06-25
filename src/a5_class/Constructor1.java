@@ -1,4 +1,4 @@
-package a5_calss;
+package a5_class;
 
 public class Constructor1 {
     public static void main(String[] args) {

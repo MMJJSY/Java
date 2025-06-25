@@ -1,4 +1,4 @@
-package a5_calss;
+package a5_class;
 
 // 이 자료형의 목적은 학생데이터를 저자앟기 위함
 // 이런 목적의 클래스에는 main()를 선언하지 않는다.
@@ -43,7 +43,14 @@ public class Student {
         // 3) 반환형 : 생성자는 반환형 없음, 메서드는 반드시 명시(void, int, String등)
 
         // #3. 메서드
-        public double sumScore() {
+
+    @Override // 부모의 메서드를 자식이 수정했다는 의미. 자식만 가지고 있는 메서드에는 안붙음.
+    public String toString() {
+       // return super.toString(); // super는 부모 클래스인 object 클래스
+        return this.name + " " + this.age; // 반환하는 값은 이 클래스에 맞춰 작성해야함!
+    }
+
+    public double sumScore() {
             double sum = this.scoreMath + this.scoreHistory + this.scoreMusic;
             return sum;
         }
@@ -53,7 +60,11 @@ public class Student {
         return average;
         }
         public  String setName(String newName){
-        /*
+
+        this.name = newName;
+        return this.name;
+        }
+         /*
         중요!!
         클래스의 필드를 직접 수정하면 각 필드의 특징을 거스르는 값이 저장될 수 있음
         예를 들어 숫자가 포함된 이름은 문법적으로는 문제없으나 이름에는 적절하지 못함
@@ -67,9 +78,6 @@ public class Student {
 //                System.out.println("에러발생. 이름이 없음.");
 //                // 예외발생~
 //            }
-        this.name = newName;
-        return this.name;
-        }
     }
 
     /*

@@ -1,4 +1,4 @@
-package a5_calss;
+package a5_class;
 
 public class ConstructorThis {
     public static void main(String[] args) {
@@ -26,6 +26,7 @@ class AAA {
     }
 }
 class BBB {
+    // 필드
     int m1;
     int m2;
     int m3;
@@ -37,7 +38,7 @@ class BBB {
         this.m4 = 4;
     }
     BBB(int m1) { // 매개변수 하나
-        // this 메서드는 자신이 속한 클래스 내부의 다른 생성자를 호출하는 것
+        // this()는 <= 디스 메서드는 자신이 속한 클래스 내부의 다른 생성자를 호출하는 것
         this(); // 생성자 기본 생성자를 호출 , this가 없으면 2 3 4는 0이 나옴
         this.m1 = m1;
     }
@@ -46,6 +47,7 @@ class BBB {
         this.m2 = m2;
     }
     void print() {
+        // this(); // this 메서드는 반드시 생성자 안에서만 호출 가능
         System.out.println(m1 + " " + m2 + " " + m3 + " " + m4);
     }
 }

@@ -1,4 +1,4 @@
-package a5_calss;
+package a5_class;
 
 public class User {
     // 필드

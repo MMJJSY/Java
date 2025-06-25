@@ -1,6 +1,5 @@
-package a5_calss;
+package a5_class;
 
-import java.sql.SQLOutput;
 import java.util.Date;
 
 public class MyClass {
@@ -75,6 +74,19 @@ public class MyClass {
         // System.out.println(a); // 에러. 스택변수는 초기화해야만 읽을 수 있다.
         a = 10;
         System.out.println(a); // 10
+
+        BankAccount cos1 = new BankAccount("356-1447-2872-83","rani",5000);
+
+        cos1.deposit(5000);
+        System.out.println(cos1);
+        cos1.deposit(0);
+        System.out.println(cos1);
+
+        cos1.withdraw(9000);
+        System.out.println(cos1);
+
+
+
 
     }
 }
