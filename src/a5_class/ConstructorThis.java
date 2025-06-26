@@ -31,6 +31,7 @@ class BBB {
     int m2;
     int m3;
     int m4;
+    // 생성자
     BBB() { // 기본생성자
         this.m1 = 1;
         this.m2 = 2;
