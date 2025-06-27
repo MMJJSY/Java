@@ -28,8 +28,8 @@ public class Array1 {
         array1[2] = 20; // 2번 index
         // array1[3] = 30; // 에러. 인덱스 초과(array1은 생성시 3개로 만듦)
         // 화면출력
-        System.out.println(array1[0] + " " + array1[1] + " " + array1[2]);
-        System.out.println(Arrays.toString(array1));
+        System.out.println(array1[0] + " " + array1[1] + " " + array1[2]); // 0 10 20
+        System.out.println(Arrays.toString(array1)); // [0, 10, 20]
         // 배열의 출력 메서드(toString)을 사용하면 쉽게 전체 데이터를 확인 가능
 
         // 배열의 초기값 정리
@@ -50,6 +50,10 @@ public class Array1 {
         students[2] = new Student("Laura",30,"부산","여자",60,50,70);
         System.out.println(Arrays.toString(students));
         // 클래스 안에 toString 메서드를 오버라이드 해야만 출력이 정상적으로 나옴.
+
+
+
+
 
     }
 }

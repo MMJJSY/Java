@@ -31,6 +31,7 @@ public class String3 {
         String sample = "abc/def-ghi jkl";
         String[] strarray = sample.split(" |-|/" );
         System.out.println(Arrays.toString(strarray)); // [abc, def, ghi, jkl]
+        System.out.println();
         // 정규표현식 (regex = regular expression)
         // 특정패턴을 가진 문자열을 찾거나 조작하기 위한 문자열
         // 주로 문자열 검색, 추출, 치환과 같은 작업에 사용됨
@@ -44,6 +45,7 @@ public class String3 {
         String email2 = "textsdfkjdsak";
         isValid = email2.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$");
         System.out.println(isValid); // false
+        System.out.println();
 
         // 한국휴대폰 유효성검사
         // ^01([0|1|6|7|8|9])-\\d{3,4}-\\d{4}$
@@ -57,9 +59,23 @@ public class String3 {
         // <중요> 유저로부터 위와 같은 정보를 입력받을 때 유효성 검사가 필요함
         // 이때 if~else로 코드를 구현하면 지나치게 복잡하므로
         // 간단하게 정규표현식을 이용하자!!!!
-        // 정규표현식은 https://regexr.com/에서 생성 가능
         // 정규표현식은 https://regexr.com/에서 생성 가능 (또는 GPT 이용)
 
+        // trim 공백제거 (단어의 앞뒤에 있는 공백)
+        // 단어 안의 공백은 제거되지 않음
+        String msg = "    abc    ";
+        System.out.println(msg.trim()); // abc
+        System.out.println();
+
+        // 6. 문자열의 내용 비교 <중요!!>
+        String str2 = new String("Java");
+        String str3 = new String("Java");
+        String str4 = new String("java");
+        System.out.println(str2 == str3); // false
+        System.out.println(str3 == str4); // false
+        System.out.println(str2.equals(str3)); // true
+        System.out.println(str3.equals(str4)); // false
+        System.out.println(str3.equalsIgnoreCase(str4)); // true
 
     }
 }
