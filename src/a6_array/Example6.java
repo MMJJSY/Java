@@ -15,6 +15,9 @@ public class Example6 {
     public static String reverseString(String str) {
         String a;
         char[] name2 = str.toCharArray();
+        System.out.println(name2);
+        // 모르겠음
+
 
         // 힌트! String을 charArray로 변형하여 거꾸로 담은 다음
         // 그걸 다시 String 으로 변환하여 반환하세요.

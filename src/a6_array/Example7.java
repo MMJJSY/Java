@@ -17,7 +17,13 @@ public class Example7 {
     public static void calculate2DArray(int[][] arr) {
         int total = 0;
         double average = 0;
+        for (int i = 0; i < arr.length; i++ ){
+            for (int j = 0; j < arr[i].length; j++){
 
+              total = arr[i][j] + total;
+              average = total / 20d;
+            }
+        }
 
 
 
