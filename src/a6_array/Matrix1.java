@@ -24,17 +24,25 @@ public class Matrix1 {
         int[][] array4 = {{1,2,3},{4,5,6}};
 
         // 2차원배열의 출력 (deepToString)
-        System.out.println(Arrays.deepToString(array3));
+        System.out.println(Arrays.deepToString(array3)); // [1, 2, 3], [4, 5, 6]
         System.out.println(Arrays.toString(array3));
         System.out.println(array3.length); // 2 (배열안에 배열이 있기 때문에 앞의 2를 참조)
         System.out.println(array3[0].length); // 3
         System.out.println();
-        for (int i=0; i<array3.length; i++) {
+        for (int i=0; i < array3.length; i++) {
             for (int j=0; j < array3[i].length; j++) {
                 System.out.println(array3[i][j]);
+                System.out.println();
             }
         }
 
+        int[][] a = {{1,2},{3,4,5}};
+
+        for(int[] m : a) {
+            for(int n : m) {
+                System.out.println(n); // 1 2 3 4 5
+            }
+        }
 
     }
 }

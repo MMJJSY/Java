@@ -54,8 +54,13 @@ public class String2 {
 
         char[] array3 = str8.toCharArray();
         char[] array4 = str9.toCharArray();
+        System.out.println(array3); // Hello Java!
+        System.out.println(array4); // 안녕하세요
         System.out.println(Arrays.toString(array3));
+        // [H, e, l, l, o, , J, a, v, a, !]
         System.out.println(Arrays.toString(array4));
+        // [안, 녕, 하, 세, 요]
+
         // String은 불변성을 가지므로 수정할 수 없음
         // String을 char[]로 변경해서 수정하거나 검색하는데 용이하도록 사용
         System.out.println();

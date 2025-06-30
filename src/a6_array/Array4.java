@@ -11,7 +11,7 @@ public class Array4 {
 
         // 배열의 길이
         int[] numbers = {3,4,5,6,7};
-        System.out.println("배열의 길이=" + numbers.length);
+        System.out.println("배열의 길이 = " + numbers.length); // 배열의 길이 = 5
         // 배열의 순회
         // 방법1
         for (int i=0; i < numbers.length; i++) {

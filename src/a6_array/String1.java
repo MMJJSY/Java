@@ -7,6 +7,8 @@ public class String1 {
         // 내부적으로 char의 배열 모습을 하고 있음
         // 배열과 유사한 특징을 가지지만 원칙적으로 불변셩(immutable)을 가짐
 
+
+
         // 숫자 => 문자열(String)
         int a = 10;
         String str1 = Integer.toString(a);

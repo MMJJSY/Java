@@ -15,7 +15,8 @@ public class Example5 {
 }
     public static String checkMember(String[] members, String str) {
         for(String data : members) {
-            if(data.equalsIgnoreCase(str)){return str + "님 환영합니다.";
+            if(data.equalsIgnoreCase(str)){
+                return str + "님 환영합니다.";
             }
         }
         return "회원가입 해주세요";

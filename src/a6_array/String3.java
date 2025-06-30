@@ -25,6 +25,7 @@ public class String3 {
         String filename ="document.pdf";
         String extention = filename.substring(filename.indexOf('.')+1);
         System.out.println(extention); //pdf
+
         // split
         // 예제설명 : sample 안의 /, -,  , 를 기준으로 나눠서 배열에 담는 방법
         // [abc, def, ghi, jkl]
@@ -76,6 +77,23 @@ public class String3 {
         System.out.println(str2.equals(str3)); // true
         System.out.println(str3.equals(str4)); // false
         System.out.println(str3.equalsIgnoreCase(str4)); // true
+
+        String str11 = "내 이름은 [홍길동]입니다. 나이는 [15]살 입니다.";
+        String name;
+        int age;
+        int index = str11.indexOf("[") +1 ;
+        System.out.println(index);
+        name = str11.substring(index,index+3);
+
+        index = str11.lastIndexOf("[") + 1;
+        age = Integer.parseInt(str11.substring(index, index+2));
+
+
+
+        System.out.println(name);
+        System.out.println(age);
+
+
 
     }
 }
