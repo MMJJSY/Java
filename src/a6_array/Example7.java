@@ -21,7 +21,7 @@ public class Example7 {
             for (int j = 0; j < arr[i].length; j++){
 
               total = arr[i][j] + total;
-              average = total / 20d;
+              average = total / 20d; // 여기서 배열의 총 인덱스 구하는 법을 모르겠습니다.
             }
         }
 
