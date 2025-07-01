@@ -8,7 +8,7 @@ public class Example1 {
         // 랜덤한 정수 10개를 가진 배열에서 특정 값을 찾고 그 위치 인덱스 값을 리턴하는 메서드.
         // 못찾으면 -1 리턴
         int[] numbers = {37, 82, 14, 56, 91, 23, 48, 65, 8, 74};
-        int found = findNumber(numbers, 56);
+        int found = findNumber(numbers, 14);
         System.out.println(found); // 3
         found = findNumber(numbers,100);
         System.out.println(found); // -1
@@ -20,7 +20,7 @@ public class Example1 {
             if (data == target) {
                 return index;
             }
-            index++;
+            index += 1;
         }
         return -1;
     }

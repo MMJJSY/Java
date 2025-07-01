@@ -14,12 +14,14 @@ public class ArrayList3 {
         aList1.add(4);
         aList1.add(5);
         System.out.println(aList1); // [3, 4, 5]
+
         System.out.println();
         System.out.println("#2");
 
         // #2. add (int index, E element) (요소추가, 특정위치에 추가)
         aList1.add(1,6);
         System.out.println(aList1); // [3, 6, 4, 5]
+
         System.out.println();
         System.out.println("#3");
 
@@ -29,6 +31,7 @@ public class ArrayList3 {
         aList2.add(2);
         aList2.addAll(aList1);
         System.out.println(aList2); // [1, 2, 3, 6, 4, 5]
+
         System.out.println();
         System.out.println("#4");
 
@@ -39,6 +42,7 @@ public class ArrayList3 {
         aList2.addAll(1,aList3);
         System.out.println(aList2); // [1, 100, 101, 2, 3, 6, 4, 5]
         System.out.println(aList3); // [100, 101]
+
         System.out.println();
 
         // #5. set (수정)
@@ -51,11 +55,13 @@ public class ArrayList3 {
         // aList3.remove(10); // 주의. 정수는 인덱스로 인식함
         aList3.remove(0);
         System.out.println(aList3); // [20]
+
         System.out.println();
+        System.out.println("#7");
 
         // #7. remove(Object obj) (해당 오브젝트 삭제)
-        aList3.add(0, 10); // [10, 20]
-        System.out.println(aList3);
+        aList3.add(0, 10);
+        System.out.println(aList3); // [10, 20]
         aList3.remove(Integer.valueOf(10));
         System.out.println(aList3); // [20]
         System.out.println();
@@ -93,7 +99,7 @@ public class ArrayList3 {
 
         // 어떻게하면 Integer[]로 변환할 수 있을까??
         Integer[] intArray = aList2.toArray(new Integer[0]); // 가능
-        Integer[] intArray2 = aList2.toArray(new Integer[aList2.size()]); // 가능힞;민 잘안씀
+        Integer[] intArray2 = aList2.toArray(new Integer[aList2.size()]); // 가능하지만 잘안씀
         System.out.println(Arrays.toString(intArray)); // [1, 100, 101, 2, 3, 6, 4, 5]
         System.out.println();
         // new Integer[0]는 0의 크기를 가진 배열을 만드는 것이 아니라

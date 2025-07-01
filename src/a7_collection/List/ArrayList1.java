@@ -9,7 +9,7 @@ public class ArrayList1 {
         // List 리스트
         // 컬렉션중에 가장 많이 사용되는 클래스(=실제로는 인터페이스)
         // <중요> 모든 컬렉션은 "객체"만 저장할 수 있음!!!!
-        // 기본자료형은 반딋 래퍼클래스의 객체로 변환되어 저장한다!!
+        // 기본자료형은 반드시 래퍼클래스의 객체로 변환되어 저장한다!!
         // 사용시에는 오토박싱, 오토언박싱 기능이 자동동작해서 타입변환은 자동으로 이루어짐
 
         // 배열의 단점
@@ -34,6 +34,8 @@ public class ArrayList1 {
         aList.add("B");
         aList.add("C");
         aList.add("D");
+
+        System.out.println(aList);
         System.out.println(aList.size()); // 4
         System.out.println(aList); // [A, B, C ,D]
         aList.remove("C"); // 인덱스가 아니라 값을 전달하면 찾아서 삭제
@@ -47,6 +49,6 @@ public class ArrayList1 {
         System.out.println(stringList.size()); // 4
         System.out.println(stringList); // [A, B, C, D]
         stringList.add("E");
-        System.out.println(stringList); // [A, B, C, D, E
+        System.out.println(stringList); // [A, B, C, D, E]
     }
 }

@@ -81,12 +81,15 @@ public class String3 {
         String str11 = "내 이름은 [홍길동]입니다. 나이는 [15]살 입니다.";
         String name;
         int age;
-        int index = str11.indexOf("[") +1 ;
-        System.out.println(index);
-        name = str11.substring(index,index+3);
+        int index;
+        int firstname = str11.indexOf("[")+1 ;
+        int lastname = str11.indexOf("]");
+        name = str11.substring(firstname,lastname);
 
-        index = str11.lastIndexOf("[") + 1;
-        age = Integer.parseInt(str11.substring(index, index+2));
+        int firstage = str11.lastIndexOf("[") + 1;
+        int lastage = str11.lastIndexOf("]");
+        age = Integer.parseInt(str11.substring(firstage,lastage));
+
 
 
 
