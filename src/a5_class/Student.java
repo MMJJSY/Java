@@ -37,7 +37,10 @@ public class Student {
         this.scoreMusic = scoreMusic;
     }
 
-        // 생성자와 메서드의 차이점
+    public Student(String victory0219, String victory, int i) {
+    }
+
+    // 생성자와 메서드의 차이점
         // 1) 목적 : 생성자는 필드의 초기화 역할, 메서드는 기능 구현 역할
         // 2) 이름 : 생성자는 클래스와 동일, 메서드는 동사로 시작하도록 작명(동사+명사)
         // 3) 반환형 : 생성자는 반환형 없음, 메서드는 반드시 명시(void, int, String등)
