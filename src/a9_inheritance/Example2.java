@@ -55,9 +55,9 @@ class Album {
     @Override
     public String toString() {
         return "Album{" +
-                "title='" + title + '\'' +
-                ", releaseYear=" + releaseYear +
-                ", tracks=" + tracks +
+                "앨범제목='" + title + '\'' +
+                ", 발매연도=" + releaseYear +
+                ", 수록곡=" + tracks +
                 '}';
     }
 }
