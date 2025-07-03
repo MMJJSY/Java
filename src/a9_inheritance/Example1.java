@@ -50,7 +50,12 @@ class Student {
     }
 
     public void setGrade(int grade) {
+        // 예외처리 (getter, setter를 사용하는 이유)
+        if(grade > 0 && grade < 7){
         this.grade = grade;
+        } else{
+            System.out.println("잘못된 입력입니다. [1-6] ");
+        }
     }
 
     @Override
@@ -73,8 +78,10 @@ public class Example1 {
         //s1.grade = 2; // 오류 grade가 private 이므로 참조불가
         s1.setGrade(3);
         System.out.println(s1); // student{studentID='victory0219', name='Victory', grade=3}
+        s1.setGrade(100); // 잘못된 입력입니다. [1-6]
+        System.out.println(s1); // 100학년은 없음. 실수로 잘못된 값이 저장됨 (getter, setter로 예외처리)
 
-        Album a1 = new Album("ㅇ",2,'d');
+
 
 
     }
