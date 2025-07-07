@@ -2,12 +2,16 @@ package a9_inheritance.ObjectClass;
 
 class C {
     String name;
-    C(){}
+    C(){
+
+    }
     C(String name){ this.name = name; }
 }
 class D {
     String name;
-    D() {}
+    D() {
+
+    }
     D(String name) { this.name = name; }
     @Override
     public boolean equals(Object obj) {

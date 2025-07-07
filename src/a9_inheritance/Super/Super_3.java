@@ -21,9 +21,15 @@ class B1 extends A1 {
 }
 public class Super_3 {
     public static void main(String[] args) {
-//        A1 value1 = new A1();
-//        A1 value2 = new A1(3);
-//        B1 value3 = new B1();
-        B1 value4 = new B1(3);
+        A1 value1 = new A1();
+        System.out.println(); // a1-2 a1-1
+
+        A1 value2 = new A1(3); // a-2
+        System.out.println();
+
+        B1 value3 = new B1(); //  a2 a1 b2 b1
+        System.out.println();
+
+        B1 value4 = new B1(3); // a2 a1 b2
     }
 }

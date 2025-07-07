@@ -1,6 +1,7 @@
 package a9_inheritance.ObjectClass;
 
-class MyClass extends Object {} // extends Object는 생략해도 자동생성됨
+class MyClass extends Object {}
+// extends Object는 생략해도 자동생성됨
 
 public class Object_1 {
     public static void main(String[] args) {

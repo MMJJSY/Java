@@ -31,6 +31,6 @@ class DD extends CC {
 
 public class Super_2 {
     public static void main(String[] args) {
-        BB value1 = new BB();
+      BB value1 = new BB();
     }
 }

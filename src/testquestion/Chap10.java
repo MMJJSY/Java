@@ -81,11 +81,11 @@ public class Chap10 {
 
     //q8 2, 4, B클 instance, A클 static method
 
-    //q9 A의 기본생성자가 없기 때문에 super( )를 호출할 수 없다
+    //q9 A의 기본생성자가 없기 때문에 super()를 호출할 수 없다
 
     //q10 A 생성자1 A 생성자2 B생성자2
 
-    //q11 - A 클래스 내부의 equals() 메서드는 오버라이딩을 하지 않아 Object 클래스의 equals( ) 메서드
+    //q11 - A 클래스 내부의 equals() 메서드는 오버라이딩을 하지 않아 Object 클래스의 equals() 메서드
     //    - 이는 스택 메모리의 값 비교 즉, 객체의 위치를 비교
     //    - 따라서 두 객체의 생성위치가 서로 다르기 때문에 false가 출력
 
