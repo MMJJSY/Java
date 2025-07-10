@@ -18,6 +18,7 @@ public class ArrayList3 {
         System.out.println();
         System.out.println("#2");
 
+
         // #2. add (int index, E element) (요소추가, 특정위치에 추가)
         aList1.add(1,6);
         System.out.println(aList1); // [3, 6, 4, 5]
