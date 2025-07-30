@@ -1,42 +1,34 @@
 package testquestion;
 
 public class Chap7re {
-    public static void main(String[] args) {
-        // false 0 0.0 null
-        // false
-        // 0
-        // 0.0
-        // null
 
-        //0.0 0.0null nullfalse
-
-        // q2
-        // q3
-
-        // int[] data2
-
+    int m = 3;
+    int n = 5;
+    void abc(int m, int n) {
+        m= this.m;
+        n=n;
+        System.out.println(m);
+        System.out.println(n);
     }
-    static class A {
 
-        A() {
-            System.out.println("입력값이 없습니다.");
-        }
 
-        A(int a){
-            System.out.println(a);
-        }
+        public static void main(String[] args) {
 
-        A(double a){
-            System.out.println(a);
-        }
+        Chap7re re = new Chap7re();
+        re.abc(7,8);
+            System.out.println(re.m);
+            System.out.println(re.n);
 
-        A(String str){
-            System.out.println(str);
-        }
-
+            // 3 8 3 5
 
 
 
     }
 
-}
+
+
+ }
+
+
+
+
